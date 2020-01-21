@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YANDEX_TRANSLATE_API</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <main class="main-content">
+
+        <div class="error-msg-block js-error-msg-block hide">
+            <p class="msg" id="js-error-msg">Ошибочка</p>
+
+            <button class="confirm-btn" id="js-error-confirm-btn" type="button">Ок</button>
+        </div>
+
+        <div class="fixed-container">
+            <h1 class="main-content__header">
+                YANDEX TRANSLATE API
+            </h1>
+
+            <section class="translate-block">
+                <h2 class="translate-block__header">Переводчик</h2>
+
+                <label class="chose-language__label">Язык с которого переводим
+                    <select class="language-selector js-language-selector">
+<!--                        <option>ru</option>-->
+<!--                        <option>eng</option>-->
+                    </select>
+                </label>
+
+                <label class="translate-text__label">
+                    <textarea class="translate-text__textarea" id="js-text-to-translate" placeholder="Введите текст"></textarea>
+                </label>
+
+                <label class="chose-language__label">Язык на который переводим
+                    <select class="language-selector js-language-selector">
+<!--                        <option>ru</option>-->
+<!--                        <option>eng</option>-->
+                    </select>
+                </label>
+
+                <label class="translate-text__label">
+                    <textarea class="translate-text__textarea" id="js-translated-text" placeholder="Перевод"></textarea>
+                </label>
+
+                <button class="translate-btn" id="js-translate-btn" type="submit">Перевести</button>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
